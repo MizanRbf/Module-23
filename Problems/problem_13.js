@@ -33,5 +33,5 @@ else{
   return "Only 'add','substract', 'multiply' & 'divide' operation is allowed";
 }
 }
-let result = calculator(4, 5, 'add');
+let result = calculator(1.5, 1.5, 'multiply');
 console.log(result);
