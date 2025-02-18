@@ -1,26 +1,26 @@
 function willSuccess(marks){
   if(!Array.isArray(marks)){
-    return "Invalid";
+    return '"Invalid"';
   }
-   let passMarkCount = 0;
-   let failMarkCount = 0;
+   let passMark = 0;
+   let failMark = 0;
   for(let mark of marks){
     if(typeof(mark) !== 'number'){
       return "only granted number";
      }
     if(mark >= 50 ){
-    passMarkCount++;
+      passMark++;
     }
     else{
-      failMarkCount++
+      failMark++;
     }
   }
-  if(passMarkCount > failMarkCount){
+  if(passMark > failMark){
   return 'true';
   }
   else{
     return 'false';
   }
 }
-let result = willSuccess([77, 80, 50, 30, 30]);
+let result = willSuccess([60,55]);
 console.log(result);
