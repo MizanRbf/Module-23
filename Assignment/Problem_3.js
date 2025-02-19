@@ -7,8 +7,8 @@ function willSuccess(marks){
   for(let mark of marks){
     if(typeof(mark) !== 'number'){
       return "only granted number";
-     }
-    if(mark >= 50 ){
+    }
+    else if(mark >= 50 ){
       passMark++;
     }
     else{
@@ -22,5 +22,5 @@ function willSuccess(marks){
     return 'false';
   }
 }
-let result = willSuccess([60,55]);
+let result = willSuccess("100 , 100");
 console.log(result);

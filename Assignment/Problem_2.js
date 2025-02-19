@@ -8,5 +8,5 @@ function  validContact(contact){
   }
 return number;
 }
-let result = validContact("01238865533");
+let result = validContact(true);
 console.log(result);

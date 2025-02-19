@@ -9,10 +9,7 @@ function validProposal(person1, person2){
     return 'false';
   }
 }
-let bioData1 = 
-{ name: "toya", gender: "female", age: 24 }
+ 
 
-let bioData2 = 'kiak'
-
-let result = validProposal(bioData1, bioData2);
+let result = validProposal({ name: "mitu", gender: "male", age: 32 }, "Mizan");
 console.log(result);

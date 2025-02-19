@@ -13,9 +13,9 @@ let hour = totalSeconds / 3600;
 let minute = (totalSeconds % 3600) / 60;
 let second = totalSeconds % 60;
 let totalSleepTime = {
-  hour: parseInt(hour),
-  minute: parseInt(minute),
-  second: parseInt(second)
+  hour: Math.floor(hour),
+  minute: Math.floor(minute),
+  second: Math.floor(second)
 }
 return totalSleepTime;
 }
